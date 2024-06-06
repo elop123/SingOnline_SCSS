@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* Logo Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+body {
+  background-color: #110202;
+  margin: 0;
+  padding: 0;
+}
+
+div img {
+  width: 20px;
+  margin-top: 28px;
+  margin-right: 6px;
+  animation: pulse 1s linear infinite;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+h1 span {
+  color: #E86144;
+}
+
+.nav-main {
+  display: flex;
+  justify-content: right;
+}
+.nav-main ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-main ul li {
+  margin-right: 12px;
+  margin-top: 12px;
+}
+.nav-main ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.nav-main a:hover {
+  color: #E86144;
+}
+.nav-main a:hover a:focus {
+  color: #E86144;
+  text-decoration: underline;
+}
+
+input[type=text] {
+  background-color: #D9D9D9;
+  border-radius: 15px;
+  border: none;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.hero-section {
+  background-color: #E86144;
+  width: 350px;
+  height: 220px;
+  border-radius: 15px;
+}
+.hero-section h2 {
+  color: #FFFFFF;
+}
+
+main section {
+  display: grid;
+  grid-template-columns: 3, 1fr;
+}
+main h3 {
+  color: #E86144;
+  text-decoration: underline;
+}
+
+.music {
+  display: grid;
+  grid-template-columns: 2, 1fr;
+}
+.music h4 {
+  color: #FFFFFF;
+}
