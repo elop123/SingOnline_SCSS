@@ -1,0 +1,45 @@
+@import '../helpers/variables';
+
+.header-main {
+    img{
+    cursor: pointer;
+    }
+    h2{
+        color: $main-color;
+        display: contents;
+        margin-top: 12px;
+    }
+}
+
+input[type=text]{
+    margin-bottom: 12px;
+}
+
+section {
+    img{
+        width: 40%;
+       display: flex;
+       justify-content: left;
+       margin:auto 1rem;
+       margin-top: 2rem;
+       border: 1px solid $main-color;
+       border-radius: 5px;
+       cursor: pointer;
+       transition: transform 0.3s ease-in-out;
+       }
+       &:hover {
+        animation: pulse 1s linear;
+        transform: scale(1); 
+    }
+       
+    }
+    p {
+    color: $text-color; 
+    margin:auto 2.5rem;
+    margin-top: 5rem; 
+    cursor: pointer;
+}
+span{
+    color: $main-color;
+}
+
