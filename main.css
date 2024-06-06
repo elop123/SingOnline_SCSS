@@ -17,7 +17,7 @@ body {
   padding: 0;
 }
 
-div img {
+div .logo_image {
   width: 20px;
   margin-top: 28px;
   margin-right: 6px;
@@ -80,20 +80,34 @@ input[type=text] {
 }
 
 main section {
-  display: grid;
-  grid-template-columns: 3, 1fr;
+  display: flex;
+  justify-content: center;
 }
-main h3 {
+main section .musical_sign {
+  width: 25px;
+  height: 25px;
+  margin-top: 55px;
+  margin-left: 12px;
+  margin-right: 12px;
+  animation: pulse 1s linear infinite;
+}
+main section h3 {
   color: #E86144;
   text-decoration: underline;
+  font-size: 36px;
 }
 
-.music {
-  display: grid;
-  grid-template-columns: 2, 1fr;
+.play_list {
+  display: block;
 }
-.music h4 {
+
+h4 {
   color: #FFFFFF;
+  display: contents;
+}
+
+.play_button {
+  margin-left: 12px;
 }
 
 .hero-section {
@@ -111,4 +125,35 @@ main h3 {
   text-align: left;
   padding: 12px;
   margin-top: 12px;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.line {
+  width: 250px;
+  height: 2px;
+  background-color: #E86144;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+
+footer h3 {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .social_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer .social_icons img {
+  width: 25px;
 }

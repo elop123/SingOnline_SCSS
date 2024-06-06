@@ -9,7 +9,7 @@ body{
 }
 
 div{
-    img {
+    .logo_image {
     width: 20px;
     margin-top: 28px;
     margin-right: 6px;
@@ -74,22 +74,39 @@ input[type=text]{
 
 main {
     section{
-        display: grid;
-        grid-template-columns: 3,1fr;
+        display: flex;
+        justify-content: center;
+        .musical_sign{
+            width:25px;
+            height: 25px;
+            margin-top: 55px;
+            margin-left: 12px;
+            margin-right: 12px;
+            animation: pulse 1s linear infinite; 
+        }
+        h3{
+            color: $main-color;
+            text-decoration: underline;
+            font-size:36px ;
+        }
     }
-    h3{
-        color: $main-color;
-        text-decoration: underline;
-    }
+
+   
+   
 }
 
-.music{
-    display: grid;
-    grid-template-columns: 2,1fr;
+.play_list{
+        display:block;
+    }
+    
     h4{
         color: $text-color;
-    }
+        display: contents;
+    }  
+.play_button{
+    margin-left: 12px;
 }
+
 
 .hero-section{
     background: linear-gradient(168deg, #e97c63 0%, #efa9a9 85%);
@@ -107,21 +124,34 @@ main {
         margin-top: 12px;
     }
     }
+    .container {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
 
-
-
-// .container {
-//     width: 100%;
-//     max-width: 400px;
-//     margin: 0 auto;
-//     background-color: #2a2a2a;
-//     padding: 10px;
-//     border-radius: 8px;
-// }
-// .banner {
-//     background: linear-gradient(90deg, #E86144 0%, #FFFFFF 85%);
-//     padding: 20px;
-//     text-align: center;
-//     border-radius: 8px;
-//     margin-bottom: 20px;
-// }
+    .line{
+        width: 250px;
+        height: 2px;
+        background-color: $main-color;
+        margin: auto;
+        margin-top: 1.5rem;
+    }
+footer{
+    h3{
+        color: $text-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social_icons{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        img{
+            width: 25px;
+        }
+    }
+}
