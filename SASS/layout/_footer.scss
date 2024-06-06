@@ -1,0 +1,30 @@
+footer{
+    h3{
+        color: $text-color;
+        @include display-main;
+    }
+    .social_icons{
+        @include display-main;
+        gap: 1rem;
+        cursor: pointer;
+        img{
+            width: 25px;
+            &:hover{
+            color: #861c1c;
+            }
+        } 
+    }
+    p{
+        color: $text-color;
+        font-size: smaller;
+        margin-top: $margin_main;
+        margin-bottom: 0;
+        @include display-main;
+    }
+    h5{
+        color: $text-color;
+        font-size:20px;
+        @include display-main;
+        margin-bottom: $margin_main;
+    }
+}

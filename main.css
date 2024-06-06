@@ -59,6 +59,69 @@ span {
   color: #E86144;
 }
 
+.nav-main {
+  display: flex;
+  justify-content: right;
+}
+.nav-main ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-main ul li {
+  margin-right: 12px;
+  margin-top: 12px;
+}
+.nav-main ul a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: smaller;
+}
+.nav-main ul a:hover {
+  color: #E86144;
+}
+.nav-main ul a:hover a:focus {
+  color: #E86144;
+  text-decoration: underline;
+}
+
+footer h3 {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+footer .social_icons img {
+  width: 25px;
+}
+footer .social_icons img:hover {
+  color: #861c1c;
+}
+footer p {
+  color: #FFFFFF;
+  font-size: smaller;
+  margin-top: 12px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer h5 {
+  color: #FFFFFF;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
 body {
   background-color: #110202;
   margin: 0;
@@ -78,32 +141,6 @@ h1 {
 h1 span {
   color: #E86144;
   animation: rotate 5s linear infinite;
-}
-
-.nav-main {
-  display: flex;
-  justify-content: right;
-}
-.nav-main ul {
-  display: flex;
-  list-style-type: none;
-}
-.nav-main ul li {
-  margin-right: 12px;
-  margin-top: 12px;
-}
-.nav-main ul li a {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-weight: 600;
-  font-size: smaller;
-}
-.nav-main a:hover {
-  color: #E86144;
-}
-.nav-main a:hover a:focus {
-  color: #E86144;
-  text-decoration: underline;
 }
 
 input[type=text] {
@@ -132,6 +169,7 @@ input[type=text] {
 main section {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 main section .musical_sign {
   width: 25px;
@@ -145,6 +183,10 @@ main section h3 {
   color: #E86144;
   text-decoration: underline;
   font-size: 36px;
+}
+main section .rectangle {
+  width: 155px;
+  height: 30px;
 }
 
 .play_list {
@@ -183,6 +225,16 @@ h4 {
   margin: 0 auto;
   padding: 20px;
 }
+@media (min-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
 
 .line {
   width: 250px;
@@ -190,30 +242,4 @@ h4 {
   background-color: #E86144;
   margin: auto;
   margin-top: 1.5rem;
-}
-
-footer h3 {
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-footer .social_icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  cursor: pointer;
-}
-footer .social_icons img {
-  width: 25px;
-}
-footer p {
-  color: #FFFFFF;
-  font-size: smaller;
-  margin-top: 12px;
-  margin-bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

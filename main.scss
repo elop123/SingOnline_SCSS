@@ -1,6 +1,9 @@
 @import './SASS/helpers/variables';
 @import './SASS/helpers/animation';
 @import './SASS/pages/songs';
+@import './SASS/layout/navbar';
+@import './SASS/helpers/mixins';
+@import './SASS/layout/footer';
 
 //Google font
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
@@ -29,39 +32,11 @@ h1 {
 }
 }
 
-.nav-main{
-    display: flex;
-    justify-content: right;
-    ul{
-        display: flex;
-        list-style-type:none;
-        
-    }
-    ul li{
-        margin-right: 12px;
-        margin-top: 12px;
-    }
-    ul li a {
-        text-decoration: none;
-        color: $text-color;
-        font-weight: 600;
-        font-size: smaller;
-    }
-    & a:hover {
-        color:$text-hover;
-    & a:focus {
-            color:$text-hover;
-            text-decoration: underline;
-    }
-}}
-
 input[type=text]{
     background-color: $secondary-color;
-    border-radius: 15px;
+    border-radius: $border-radius;
     border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-main;
     padding :5px;
     margin: auto;
     width: 360px;
@@ -72,7 +47,7 @@ input[type=text]{
     background-color:$main-color;
     width: 350px;
     height:220px;
-    border-radius: 15px;
+    border-radius: $border-radius;
     h2{
         color: $text-color;
     }
@@ -80,14 +55,13 @@ input[type=text]{
 
 main {
     section{
-        display: flex;
-        justify-content: center;
+        @include display-main;
         .musical_sign{
             width:25px;
             height: 25px;
             margin-top: 55px;
-            margin-left: 12px;
-            margin-right: 12px;
+            margin-left: $margin_main;
+            margin-right: $margin_main;
             animation: pulse 1s linear infinite; 
         }
         h3{
@@ -95,22 +69,22 @@ main {
             text-decoration: underline;
             font-size:36px ;
         }
-    }
-
-   
-   
+        .rectangle{
+            width: 155px;
+            height: 30px;
+        }
+    } 
 }
 
 .play_list{
         display:block;
     }
-    
     h4{
         color: $text-color;
         display: contents;
     }  
 .play_button{
-    margin-left: 12px;
+    margin-left: $margin_main;
 }
 
 
@@ -118,7 +92,7 @@ main {
     background: linear-gradient(168deg, #e97c63 0%, #efa9a9 85%);
     padding: 12px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: $border-radius;
     margin:auto;
     margin-top: 1.5rem;
     h2{
@@ -127,16 +101,23 @@ main {
         line-height: 100%;
         text-align: left;
         padding: 12px;
-        margin-top: 12px;
+        margin-top: $margin_main;
     }
     }
     .container {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-        padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            @include breakpoint-sm {
+            max-width: 576px;
+        }
+        @include breakpoint-md {
+            max-width: 768px; 
+        }
+    
     }
-
+    
     .line{
         width: 250px;
         height: 2px;
@@ -144,30 +125,3 @@ main {
         margin: auto;
         margin-top: 1.5rem;
     }
-footer{
-    h3{
-        color: $text-color;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .social_icons{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        cursor: pointer;
-        img{
-            width: 25px;
-        }
-    }
-    p{
-        color: $text-color;
-        font-size: smaller;
-        margin-top: 12px;
-        margin-bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}

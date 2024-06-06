@@ -10,3 +10,18 @@ $gradient-color: linear-gradient(45deg, #FFFFFF, #E86144);
 $font-family: 'Inter', sans-serif;
 
 //Spacing:
+
+//Display:
+$display:flex;
+
+//Units:
+$margin_main:12px;
+
+//Border-radius:
+$border-radius:15px;
+
+// Breakpoints for different screen sizes:
+$breakpoint-sm: 576px; //for mobiles;
+$breakpoint-md: 768px; //for tablets;
+$brealpoint-lg: 992px; // for laptops;
+$breakpoint-xl: 1200px; //for large screen;
