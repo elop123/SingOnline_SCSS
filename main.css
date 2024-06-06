@@ -11,6 +11,14 @@
     transform: scale(1);
   }
 }
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(100px);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(100px);
+  }
+}
 body {
   background-color: #110202;
   margin: 0;
@@ -29,6 +37,7 @@ h1 {
 }
 h1 span {
   color: #E86144;
+  animation: rotate 5s linear infinite;
 }
 
 .nav-main {
@@ -67,6 +76,7 @@ input[type=text] {
   padding: 5px;
   margin: auto;
   width: 360px;
+  height: 25px;
 }
 
 .hero-section {
@@ -156,4 +166,13 @@ footer .social_icons {
 }
 footer .social_icons img {
   width: 25px;
+}
+footer p {
+  color: #FFFFFF;
+  font-size: smaller;
+  margin-top: 12px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

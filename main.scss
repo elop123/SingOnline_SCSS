@@ -21,8 +21,9 @@ h1 {
     color: $text-color;
     span{
     color: $main-color;
-    }
-} 
+    animation: rotate 5s linear infinite;
+}
+}
 
 .nav-main{
     display: flex;
@@ -60,6 +61,7 @@ input[type=text]{
     padding :5px;
     margin: auto;
     width: 360px;
+    height: 25px;
 }
 
 .hero-section{
@@ -153,5 +155,14 @@ footer{
         img{
             width: 25px;
         }
+    }
+    p{
+        color: $text-color;
+        font-size: smaller;
+        margin-top: 12px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

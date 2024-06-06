@@ -4,3 +4,12 @@
     50% { transform: scale(1.2); }
     100% { transform: scale(1); }
 }
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(100px);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(100px);
+    }
+}
