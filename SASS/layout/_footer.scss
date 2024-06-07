@@ -17,7 +17,7 @@ footer{
     p{
         color: $text-color;
         font-size: smaller;
-        margin-top: $margin_main;
+        margin-top: $margin_main*0.8;
         margin-bottom: 0;
         @include display-main;
     }
@@ -27,4 +27,36 @@ footer{
         @include display-main;
         margin-bottom: $margin_main;
     }
+    fieldset{
+       border: none;
+        display: inline-flex;
+        gap: 12px;
+        margin-left: 3rem;
+        button{
+            margin-top: 3px;
+            &:hover{
+                background-color: #d94d54;
+            }
+        }
+    }
+    input[type=text]{
+     width:160px;
+     height: 12px;
+     border:1.5px solid $main-color;
+    }
+    .footer_logo{
+        width: 3%;
+        padding: auto;
+        margin-left: 1rem;
+        margin-bottom: -0.15rem;
+        margin-right: 0.5rem;
+    }
+    ul{
+        color: $text-color;
+        list-style-type:none;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    
 }

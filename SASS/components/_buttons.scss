@@ -1,0 +1,19 @@
+@import '../helpers/variables';
+
+footer{
+   
+    button{
+        width: 90px;
+        height: 20px;
+        @include display-main;
+        background-color: $main-color;
+        color: $text-color;
+        border: none;
+        border-radius: $border-radius/2;
+        margin: auto;
+        margin-top: 1rem;
+        box-shadow: 0 2px 3px $main-color;
+        cursor: pointer;
+    }
+    
+}

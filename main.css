@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @keyframes pulse {
   0% {
-    transform: scale(1);
+    transform: scale(0.9);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1);
   }
   100% {
-    transform: scale(1);
+    transform: scale(0.9);
   }
 }
 @keyframes rotate {
@@ -28,35 +28,47 @@
   margin-top: 12px;
 }
 
-input[type=text] {
-  margin-bottom: 12px;
+section {
+  border-bottom: 0.2px solid #FFFFFF;
+  padding: 6px;
 }
-
-section img {
-  width: 40%;
+section .song {
+  width: 20%;
   display: flex;
   justify-content: left;
   margin: auto 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border: 1px solid #E86144;
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
-section:hover {
+section .song:hover {
+  animation: pulse 1s linear;
+  box-shadow: 0 4px 6px #E86144;
+}
+section p {
+  color: #FFFFFF;
+  margin: auto 2rem;
+  cursor: pointer;
+}
+section span {
+  color: #E86144;
+}
+section .button_play {
+  width: 10%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+section .button_play:hover {
   animation: pulse 1s linear;
   transform: scale(1);
 }
-
-p {
-  color: #FFFFFF;
-  margin: auto 2.5rem;
-  margin-top: 5rem;
-  cursor: pointer;
-}
-
-span {
-  color: #E86144;
+section .line_song {
+  width: 50px;
+  height: 1px;
+  background-color: #E86144;
 }
 
 .nav-main {
@@ -75,13 +87,13 @@ span {
   text-decoration: none;
   color: #FFFFFF;
   font-weight: 600;
-  font-size: smaller;
+  font-size: small;
 }
 .nav-main ul a:hover {
-  color: #E86144;
+  color: #ea785f;
 }
 .nav-main ul a:hover a:focus {
-  color: #E86144;
+  color: #ea785f;
   text-decoration: underline;
 }
 
@@ -107,7 +119,7 @@ footer .social_icons img:hover {
 footer p {
   color: #FFFFFF;
   font-size: smaller;
-  margin-top: 12px;
+  margin-top: 9.6px;
   margin-bottom: 0;
   display: flex;
   justify-content: center;
@@ -121,6 +133,172 @@ footer h5 {
   align-items: center;
   margin-bottom: 12px;
 }
+footer fieldset {
+  border: none;
+  display: inline-flex;
+  gap: 12px;
+  margin-left: 3rem;
+}
+footer fieldset button {
+  margin-top: 3px;
+}
+footer fieldset button:hover {
+  background-color: #d94d54;
+}
+footer input[type=text] {
+  width: 160px;
+  height: 12px;
+  border: 1.5px solid #E86144;
+}
+footer .footer_logo {
+  width: 3%;
+  padding: auto;
+  margin-left: 1rem;
+  margin-bottom: -0.15rem;
+  margin-right: 0.5rem;
+}
+footer ul {
+  color: #FFFFFF;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+footer button {
+  width: 90px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E86144;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 7.5px;
+  margin: auto;
+  margin-top: 1rem;
+  box-shadow: 0 2px 3px #E86144;
+  cursor: pointer;
+}
+
+footer button {
+  width: 90px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E86144;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 7.5px;
+  margin: auto;
+  margin-top: 1rem;
+  box-shadow: 0 2px 3px #E86144;
+  cursor: pointer;
+}
+
+section {
+  border-bottom: 0.2px solid #FFFFFF;
+  padding: 6px;
+}
+section .artist {
+  width: 20%;
+  display: flex;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 45px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+section .artist:hover {
+  animation: pulse 1s linear;
+  box-shadow: 0 4px 6px #E86144;
+}
+section p {
+  color: #FFFFFF;
+  margin: auto 2rem;
+  cursor: pointer;
+}
+section span {
+  color: #E86144;
+}
+section button {
+  width: 90px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E86144;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 7.5px;
+  margin: auto;
+  margin-top: 2rem;
+  box-shadow: 0 2px 3px #E86144;
+}
+section button:hover {
+  animation: pulse 1s linear;
+  transform: scale(1);
+}
+
+footer button {
+  width: 90px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E86144;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 7.5px;
+  margin: auto;
+  margin-top: 1rem;
+  box-shadow: 0 2px 3px #E86144;
+  cursor: pointer;
+}
+
+section {
+  border-bottom: 0.2px solid #FFFFFF;
+  padding: 6px;
+}
+section .albums {
+  width: 20%;
+  display: flex;
+  margin: auto;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+section .albums:hover {
+  animation: pulse 1s linear;
+  box-shadow: 0 4px 6px #E86144;
+}
+section p {
+  color: #FFFFFF;
+  margin: auto 2rem;
+  cursor: pointer;
+}
+section span {
+  color: #E86144;
+}
+section button {
+  width: 90px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E86144;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 7.5px;
+  margin: auto;
+  margin-top: 2rem;
+  box-shadow: 0 2px 3px #E86144;
+}
+section button:hover {
+  animation: pulse 1s linear;
+  transform: scale(1);
+}
 
 body {
   background-color: #110202;
@@ -129,14 +307,16 @@ body {
 }
 
 div .logo_image {
-  width: 20px;
-  margin-top: 28px;
+  width: 15px;
+  margin-top: 32px;
   margin-right: 6px;
   animation: pulse 1s linear infinite;
 }
 
 h1 {
   color: #FFFFFF;
+  font-size: 20px;
+  margin-top: 25px;
 }
 h1 span {
   color: #E86144;

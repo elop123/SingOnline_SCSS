@@ -7,6 +7,7 @@
     <link rel="icon" href="assets/images/Union.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    
 </head>
 <body>
     <div class="container">
@@ -20,7 +21,6 @@
             <li><a href="songs.html">SONGS</a></li>
             <li><a href="artists.html">ARTISTS</a></li>
             <li><a href="albums.html">ALBUMS</a></li>
-            <li><a href="#">LOG IN</a></li>
         </ul>
     </nav>
     <input type="text" placeholder="Search">
@@ -38,10 +38,10 @@
         <img class= "musical_sign" src="assets/images/Vector (3).png"  alt="musical-sign">
     </section>
     <section class="play_list">
-        <div>
+        <fieldset>
         <img class="play_button" src="assets/images/Frame 3.png" alt="music-on">
         <h4>Dont't give up - Jonny Doe</h4>
-        </div>
+        </fieldset>
         <div>
         <img class="play_button" src="assets/images/Frame 3.png" alt="music-on">
         <h4>Dont't give up - Jonny Doe</h4>
@@ -58,7 +58,10 @@
     <!--GLOBAL FOOTER-->
     <footer>
         <h5>Join our newsletters:</h5>
-        <input type="text" placeholder="Sing up">
+        <fieldset>
+        <input type="text" id="email-input" placeholder=" Your e-mail" >
+        <button onclick="validateEmail()">Sign up</button>
+        </fieldset>
         <div class="line"></div>
         <h3>FOLLOW US:</h3>
         <div class="social_icons">
@@ -67,7 +70,7 @@
         <img src="assets/images/tiktok.png" alt="tiktok">
         <img src="assets/images/youtube.png" alt="youtube">
         </div>
-        <p>&copy; 2024 Company Name. All rights reserved.</p>
+        <p><img  class="footer_logo" src="assets/images/Union.png" alt="logo">SingOnline &copy; 2024. All rights reserved.</p>
     </footer>
     </div>
 </body>

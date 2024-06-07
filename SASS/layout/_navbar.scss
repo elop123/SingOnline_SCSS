@@ -8,13 +8,13 @@
         list-style-type:none;
         li{
             margin-right: $margin_main;
-            margin-top: $margin_main;
+            margin-top: $margin_main;     
         } 
         a {
             text-decoration: none;
             color: $text-color;
             font-weight: 600;
-            font-size: smaller;
+            font-size:small;
         }
         & a:hover {
             color:$text-hover;

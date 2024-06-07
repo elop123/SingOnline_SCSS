@@ -1,0 +1,45 @@
+@import '../helpers/variables';
+@import '../components/buttons';
+
+section {
+    border-bottom: 0.2px solid $text-color;
+padding: 6px;
+    .albums{
+       width: 20%;
+       display: flex;
+       margin:auto ;
+       margin-top: 1rem;
+       cursor: pointer;
+       transition: transform 0.3s ease-in-out;
+       &:hover {
+        animation: pulse 1s linear;
+        box-shadow: 0 4px 6px $main-color;
+    }
+       }
+       
+    p {
+        color: $text-color; 
+        margin:auto 2rem;
+        cursor: pointer;
+    }
+    span{
+        color: $main-color;
+    }
+    button{
+        width: 90px;
+        height: 30px;
+        @include display-main;
+        background-color: $main-color;
+        color: $text-color;
+        border: none;
+        border-radius: $border-radius/2;
+        margin: auto;
+        margin-top: 2rem;
+        box-shadow: 0 2px 3px $main-color;
+        &:hover {
+            animation: pulse 1s linear;
+            transform: scale(1); 
+        }
+    }
+    }
+   

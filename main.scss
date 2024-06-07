@@ -4,6 +4,10 @@
 @import './SASS/layout/navbar';
 @import './SASS/helpers/mixins';
 @import './SASS/layout/footer';
+@import './SASS/components/buttons';
+@import './SASS/pages/artists';
+@import './SASS/pages/albums';
+@import './SASS/pages/home';
 
 //Google font
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
@@ -17,8 +21,8 @@ body{
 
 div{
     .logo_image {
-    width: 20px;
-    margin-top: 28px;
+    width: 15px;
+    margin-top: 32px;
     margin-right: 6px;
     animation: pulse 1s linear infinite;    
     }
@@ -26,6 +30,8 @@ div{
 
 h1 {
     color: $text-color;
+    font-size: 20px;
+    margin-top: 25px;
     span{
     color: $main-color;
     animation: rotate 5s linear infinite;
@@ -76,13 +82,13 @@ main {
     } 
 }
 
-.play_list{
-        display:block;
-    }
-    h4{
+ .play_list{
+         display:block;
+     }
+     h4{
         color: $text-color;
         display: contents;
-    }  
+   }  
 .play_button{
     margin-left: $margin_main;
 }
