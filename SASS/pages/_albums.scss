@@ -6,10 +6,10 @@ section {
 padding: 6px;
     .albums{
        width: 20%;
-       display: flex;
+       display: $display;
        margin:auto ;
-       margin-top: 1rem;
-       cursor: pointer;
+       margin-top: $rem_main;
+       cursor: $cursor;
        transition: transform 0.3s ease-in-out;
        &:hover {
         animation: pulse 1s linear;
@@ -19,8 +19,8 @@ padding: 6px;
        
     p {
         color: $text-color; 
-        margin:auto 2rem;
-        cursor: pointer;
+        margin:auto $rem_main*2;
+        cursor: $cursor;
     }
     span{
         color: $main-color;
@@ -34,7 +34,7 @@ padding: 6px;
         border: none;
         border-radius: $border-radius/2;
         margin: auto;
-        margin-top: 2rem;
+        margin-top: $rem_main*2;
         box-shadow: 0 2px 3px $main-color;
         &:hover {
             animation: pulse 1s linear;

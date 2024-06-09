@@ -11,14 +11,6 @@
     transform: scale(0.9);
   }
 }
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg) translateX(100px);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg) translateX(100px);
-  }
-}
 .header-main img {
   cursor: pointer;
 }
@@ -320,7 +312,6 @@ h1 {
 }
 h1 span {
   color: #E86144;
-  animation: rotate 5s linear infinite;
 }
 
 input[type=text] {
@@ -355,48 +346,63 @@ main section .musical_sign {
   width: 25px;
   height: 25px;
   margin-top: 55px;
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
   animation: pulse 1s linear infinite;
 }
 main section h3 {
-  color: #E86144;
+  color: #FFFFFF;
   text-decoration: underline;
   font-size: 36px;
-}
-main section .rectangle {
-  width: 155px;
-  height: 30px;
+  text-align: center;
+  margin-top: 3rem;
 }
 
-.play_list {
-  display: block;
+.playlist .songs fieldset {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
-
-h4 {
+.playlist .songs fieldset:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px #E86144;
+}
+.playlist .songs .play_button {
+  width: 15%;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+.playlist .songs h4 {
+  margin: 0;
+  margin-top: 1rem;
+  font-size: 18px;
   color: #FFFFFF;
-  display: contents;
-}
-
-.play_button {
-  margin-left: 12px;
 }
 
 .hero-section {
-  background: linear-gradient(168deg, #e97c63 0%, #efa9a9 85%);
+  width: 350px;
+  height: 220px;
+  background: #706C6B;
   padding: 12px;
-  text-align: center;
+  text-align: left;
   border-radius: 15px;
   margin: auto;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+  background-color: rgba(112, 108, 107, 0.1647058824);
+  border: 2px solid rgba(232, 98, 68, 0.8980392157); /* Stroke with 85% opacity */
+  box-shadow: 2px 4px 10px #be3314;
 }
 .hero-section h2 {
-  color: #FFFFFF;
-  font-size: 42px;
+  font-size: 47px;
   line-height: 100%;
   text-align: left;
-  padding: 12px;
-  margin-top: 12px;
+  margin: auto;
+  opacity: 25%;
+}
+.hero-section h2 span {
+  text-shadow: 0px 2px 4px #be3314;
 }
 
 .container {

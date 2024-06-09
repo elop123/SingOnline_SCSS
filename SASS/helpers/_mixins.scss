@@ -19,12 +19,6 @@
     }
 }
 
-@mixin breakpoint-lg {
-    @media (min-width: #{$breakpoint-lg}) {
-        @content;
-    }
-}
-
 @mixin breakpoint-xl {
     @media (min-width: #{$breakpoint-xl}) {
         @content;

@@ -5,6 +5,8 @@ $main-color:#E86144;
 $secondary-color:#D9D9D9;
 $text-hover:#ea785f;
 $gradient-color: linear-gradient(45deg, #FFFFFF, #E86144);
+$color_footer:#861c1c;
+$hover-button:#d94d54;
 
 //Fonts:
 $font-family: 'Inter', sans-serif;
@@ -16,9 +18,14 @@ $display:flex;
 
 //Units:
 $margin_main:12px;
+$margin_use:1rem;
+$rem_main:1rem;
 
 //Border-radius:
 $border-radius:15px;
+
+//Cursor
+$cursor:pointer;
 
 // Breakpoints for different screen sizes:
 $breakpoint-sm: 576px; //for mobiles;

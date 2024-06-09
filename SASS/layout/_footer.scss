@@ -5,12 +5,12 @@ footer{
     }
     .social_icons{
         @include display-main;
-        gap: 1rem;
-        cursor: pointer;
+        gap: $rem_main;
+        cursor: $cursor;
         img{
             width: 25px;
             &:hover{
-            color: #861c1c;
+            color:$color_footer;
             }
         } 
     }
@@ -31,11 +31,11 @@ footer{
        border: none;
         display: inline-flex;
         gap: 12px;
-        margin-left: 3rem;
+        margin-left: $rem_main*3;
         button{
             margin-top: 3px;
             &:hover{
-                background-color: #d94d54;
+                background-color: $hover-button;
             }
         }
     }
@@ -47,16 +47,15 @@ footer{
     .footer_logo{
         width: 3%;
         padding: auto;
-        margin-left: 1rem;
+        margin-left: $rem_main;
         margin-bottom: -0.15rem;
-        margin-right: 0.5rem;
+        margin-right: $rem_main/2;
     }
     ul{
         color: $text-color;
         list-style-type:none;
-        display: flex;
+        display: $display;
         justify-content: space-between;
-        cursor: pointer;
+        cursor: $cursor;
     }
-    
 }

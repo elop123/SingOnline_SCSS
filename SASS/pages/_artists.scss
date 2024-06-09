@@ -36,7 +36,7 @@ padding: 6px;
         border: none;
         border-radius: $border-radius/2;
         margin: auto;
-        margin-top: 2rem;
+        margin-top: $rem_main*2;
         box-shadow: 0 2px 3px $main-color;
         &:hover {
             animation: pulse 1s linear;

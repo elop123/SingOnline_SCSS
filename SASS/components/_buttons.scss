@@ -1,7 +1,6 @@
 @import '../helpers/variables';
 
 footer{
-   
     button{
         width: 90px;
         height: 20px;
@@ -11,9 +10,9 @@ footer{
         border: none;
         border-radius: $border-radius/2;
         margin: auto;
-        margin-top: 1rem;
+        margin-top: $margin_use;
         box-shadow: 0 2px 3px $main-color;
-        cursor: pointer;
+        cursor: $cursor;
     }
     
 }
