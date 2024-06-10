@@ -6,21 +6,3 @@
     align-items: center;
 }
 
-// Mixin for breakpoints
-@mixin breakpoint-sm {
-    @media (min-width: #{$breakpoint-sm}) {
-        @content;
-    }
-}
-
-@mixin breakpoint-md {
-    @media (min-width: #{$breakpoint-md}) {
-        @content;
-    }
-}
-
-@mixin breakpoint-xl {
-    @media (min-width: #{$breakpoint-xl}) {
-        @content;
-    }
-}

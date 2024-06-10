@@ -10,17 +10,19 @@
         list-style-type:none;
         li{
             margin-right: $margin_main;
-            margin-top: $margin_main;     
-        } 
-        a {
-            text-decoration: none;
-            color: $text-color;
-            font-weight: 600;
-            font-size:small;
-            &:hover {
-                color:$text-hover;
-                text-decoration: underline; 
-        } 
-        }
+            margin-top: $margin_main; 
+            a {
+                text-decoration: none;
+                color: $text-color;
+                font-weight: 600;
+                font-size:small;   
+        } &:hover {
+            color:$text-hover;
+            text-decoration: underline; 
+    } 
+    }  
+           
+
+        
       
 }

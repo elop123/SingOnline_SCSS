@@ -115,7 +115,7 @@ main {
     margin:auto;
     margin-top: $rem_main*2;
     background-color: #706c6b2a;
-    border: 2px solid #e86244e5; /* Stroke with 85% opacity */
+    border: 2px solid #e86244e5;
     box-shadow: 2px 4px 10px #be3314;
     h2 {
         font-size:47px;
@@ -133,13 +133,6 @@ main {
             max-width: 400px;
             margin: 0 auto;
             padding: 20px;
-            @include breakpoint-sm {
-            max-width: 576px;
-        }
-        @include breakpoint-md {
-            max-width: 768px; 
-        }
-    
     }
     
     .line{

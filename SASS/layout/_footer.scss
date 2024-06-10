@@ -1,3 +1,5 @@
+@import '../helpers/variables';
+
 footer{
     h3{
         color: $text-color;
@@ -10,7 +12,7 @@ footer{
         img{
             width: 25px;
             &:hover{
-            color:$color_footer;
+            transform: scale(1.2);
             }
         } 
     }
@@ -33,7 +35,7 @@ footer{
         gap: 12px;
         margin-left: $rem_main*3;
         button{
-            margin-top: 3px;
+            margin-top: 1px;
             &:hover{
                 background-color: $hover-button;
             }
@@ -49,7 +51,7 @@ footer{
         padding: auto;
         margin-left: $rem_main;
         margin-bottom: -0.15rem;
-        margin-right: $rem_main/2;
+        margin-right: $rem_main / 2;
     }
     ul{
         color: $text-color;

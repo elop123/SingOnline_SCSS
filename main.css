@@ -66,25 +66,24 @@ section .line_song {
 .nav-main {
   display: flex;
   justify-content: center;
+  margin: auto;
 }
-.nav-main ul {
+
+ul {
   display: flex;
   list-style-type: none;
 }
-.nav-main ul li {
+ul li {
   margin-right: 12px;
   margin-top: 12px;
 }
-.nav-main ul a {
+ul li a {
   text-decoration: none;
   color: #FFFFFF;
   font-weight: 600;
   font-size: small;
 }
-.nav-main ul a:hover {
-  color: #ea785f;
-}
-.nav-main ul a:hover a:focus {
+ul li:hover {
   color: #ea785f;
   text-decoration: underline;
 }
@@ -106,7 +105,7 @@ footer .social_icons img {
   width: 25px;
 }
 footer .social_icons img:hover {
-  color: #861c1c;
+  transform: scale(1.2);
 }
 footer p {
   color: #FFFFFF;
@@ -132,7 +131,7 @@ footer fieldset {
   margin-left: 3rem;
 }
 footer fieldset button {
-  margin-top: 3px;
+  margin-top: 1px;
 }
 footer fieldset button:hover {
   background-color: #d94d54;
@@ -391,7 +390,7 @@ main section h3 {
   margin: auto;
   margin-top: 2rem;
   background-color: rgba(112, 108, 107, 0.1647058824);
-  border: 2px solid rgba(232, 98, 68, 0.8980392157); /* Stroke with 85% opacity */
+  border: 2px solid rgba(232, 98, 68, 0.8980392157);
   box-shadow: 2px 4px 10px #be3314;
 }
 .hero-section h2 {
@@ -410,16 +409,6 @@ main section h3 {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-}
-@media (min-width: 576px) {
-  .container {
-    max-width: 576px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
 }
 
 .line {
