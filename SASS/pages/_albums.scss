@@ -7,12 +7,12 @@ padding: 6px;
     .albums{
        width: 20%;
        display: $display;
-       margin:auto ;
+       margin:auto;
        margin-top: $rem_main;
        cursor: $cursor;
        transition: transform 0.3s ease-in-out;
        &:hover {
-        animation: pulse 1s linear;
+        @include pulse-animation();
         box-shadow: 0 4px 6px $main-color;
     }
        }
@@ -26,20 +26,13 @@ padding: 6px;
         color: $main-color;
     }
     button{
-        width: 90px;
-        height: 30px;
-        @include display-main;
-        background-color: $main-color;
-        color: $text-color;
-        border: none;
-        border-radius: $border-radius/2;
-        margin: auto;
-        margin-top: $rem_main*2;
-        box-shadow: 0 2px 3px $main-color;
+      @include button-style;
+      margin: $rem_main;
         &:hover {
-            animation: pulse 1s linear;
-            transform: scale(1); 
+            @include pulse-animation();
+            transform: $scale;
         }
+      }
     }
-    }
+    
    

@@ -1,4 +1,5 @@
 @import '../helpers/variables';
+@import '../helpers/mixins';
 
 
 .header-main {
@@ -26,7 +27,7 @@ padding: 6px;
        cursor: $cursor;
        transition: transform 0.3s ease-in-out;
        &:hover {
-        animation: pulse 1s linear;
+        @include pulse-animation();
         box-shadow: 0 4px 6px  $main-color;
     }
        }
@@ -45,8 +46,8 @@ padding: 6px;
         margin-top: $rem_main*2;
         margin-left: $rem_main*4;
         &:hover {
-            animation: pulse 1s linear;
-            transform: scale(1); 
+            @include pulse-animation();
+            transform: $scale;
         }
     }
     .line_song{

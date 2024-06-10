@@ -11,8 +11,6 @@ $hover-button:#d94d54;
 //Fonts:
 $font-family: 'Inter', sans-serif;
 
-//Spacing:
-
 //Display:
 $display:flex;
 
@@ -31,3 +29,6 @@ $cursor:pointer;
 $breakpoint-sm: 576px; //for mobiles;
 $breakpoint-md: 768px; //for tablets;
 $breakpoint-xl: 1200px; //for large screen;
+
+//Scaling:
+$scale:scale(1);

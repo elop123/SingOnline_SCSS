@@ -36,7 +36,7 @@ section .song {
   transition: transform 0.3s ease-in-out;
 }
 section .song:hover {
-  animation: pulse 1s linear;
+  animation: pulse 1s linear infinite;
   box-shadow: 0 4px 6px #E86144;
 }
 section p {
@@ -54,7 +54,7 @@ section .button_play {
   margin-left: 4rem;
 }
 section .button_play:hover {
-  animation: pulse 1s linear;
+  animation: pulse 1s linear infinite;
   transform: scale(1);
 }
 section .line_song {
@@ -202,7 +202,7 @@ section .artist {
   transition: transform 0.3s ease-in-out;
 }
 section .artist:hover {
-  animation: pulse 1s linear;
+  animation: pulse 1s linear infinite;
   box-shadow: 0 4px 6px #E86144;
 }
 section p {
@@ -215,7 +215,7 @@ section span {
 }
 section button {
   width: 90px;
-  height: 30px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,11 +224,13 @@ section button {
   border: none;
   border-radius: 7.5px;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   box-shadow: 0 2px 3px #E86144;
+  cursor: pointer;
+  margin: 1rem;
 }
 section button:hover {
-  animation: pulse 1s linear;
+  animation: pulse 1s linear infinite;
   transform: scale(1);
 }
 
@@ -261,7 +263,7 @@ section .albums {
   transition: transform 0.3s ease-in-out;
 }
 section .albums:hover {
-  animation: pulse 1s linear;
+  animation: pulse 1s linear infinite;
   box-shadow: 0 4px 6px #E86144;
 }
 section p {
@@ -274,7 +276,7 @@ section span {
 }
 section button {
   width: 90px;
-  height: 30px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -283,11 +285,13 @@ section button {
   border: none;
   border-radius: 7.5px;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   box-shadow: 0 2px 3px #E86144;
+  cursor: pointer;
+  margin: 1rem;
 }
 section button:hover {
-  animation: pulse 1s linear;
+  animation: pulse 1s linear infinite;
   transform: scale(1);
 }
 
@@ -331,6 +335,10 @@ input[type=text] {
   width: 350px;
   height: 220px;
   border-radius: 15px;
+}
+.hero-section:hover {
+  transform: scale(1.05);
+  transition: 0.6s ease-in-out;
 }
 .hero-section h2 {
   color: #FFFFFF;
