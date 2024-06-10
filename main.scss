@@ -48,15 +48,16 @@ input[type=text]{
     height: 25px;
 }
 
-.hero-section{
-    background-color:$main-color;
-    width: 350px;
-    height:220px;
-    border-radius: $border-radius;
-    }
-    h2{
-        color: $text-color;
-    }
+// .hero-section{
+//     background-color:$main-color;
+//     width: 350px;
+//     height:220px;
+//     border-radius: $border-radius;
+//     }
+//     h2{
+//         color: $text-color;
+       
+//     }
 
 main {
     section{
@@ -118,6 +119,7 @@ main {
     border: 2px solid #e86244e5;
     box-shadow: 2px 4px 10px #be3314;
     h2 {
+        color: $text-color;
         font-size:47px;
         line-height: 100%;
         text-align: left;

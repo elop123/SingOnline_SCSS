@@ -330,17 +330,6 @@ input[type=text] {
   height: 25px;
 }
 
-.hero-section {
-  background-color: #E86144;
-  width: 350px;
-  height: 220px;
-  border-radius: 15px;
-}
-
-h2 {
-  color: #FFFFFF;
-}
-
 main section {
   display: flex;
   justify-content: center;
@@ -399,6 +388,7 @@ main section h3 {
   box-shadow: 2px 4px 10px #be3314;
 }
 .hero-section h2 {
+  color: #FFFFFF;
   font-size: 47px;
   line-height: 100%;
   text-align: left;
