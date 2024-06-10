@@ -2,7 +2,9 @@
 
 .nav-main{
     display: $display;
-    justify-content: right;
+    justify-content: center;  
+    margin: auto;  
+    }
     ul{
         display: $display;
         list-style-type:none;
@@ -15,13 +17,10 @@
             color: $text-color;
             font-weight: 600;
             font-size:small;
-        }
-        & a:hover {
-            color:$text-hover;
-        & a:focus {
+            &:hover {
                 color:$text-hover;
-                text-decoration: underline;
+                text-decoration: underline; 
+        } 
         }
-    } 
-   
-}}
+      
+}

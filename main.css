@@ -65,7 +65,7 @@ section .line_song {
 
 .nav-main {
   display: flex;
-  justify-content: right;
+  justify-content: center;
 }
 .nav-main ul {
   display: flex;
