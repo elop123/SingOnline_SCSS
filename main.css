@@ -88,6 +88,11 @@ ul li:hover {
   text-decoration: underline;
 }
 
+@media (min-width: 768px) {
+  .nav-main ul li a {
+    font-size: larger;
+  }
+}
 footer h3 {
   color: #FFFFFF;
   display: flex;

@@ -20,5 +20,17 @@
             color:$text-hover;
             text-decoration: underline; 
     } 
-    }    
+    }   
+}
+
+@media (min-width:768px){
+    .nav-main{
+        ul{
+            li{
+                a{
+                    font-size: larger;
+                }
+            }
+        }
+    }
 }
